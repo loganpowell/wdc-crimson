@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>
+      Crimson Hexagon Web Data Connector
+    </title>
+    <link href="c3.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <script src="/socket.io/socket.io.js">
+    </script>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js">
+    </script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js">
+    </script>
+    <script src="d3.min.js" charset="utf-8">
+    </script>
+    <script src="c3.min.js">
+    </script>
+    <script src="bundle.js">
+    </script>
+	<meta http-equiv="Cache-Control" content="no-store" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://connectors.tableau.com/libs/tableauwdc-2.3.latest.js" type="text/javascript"></script>
+    <script src="./MasterMonitor.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default" style = "background-color:#586c85">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">
+              Toggle navigation
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+          </button>
+          <div class="navbar-brand">
+            <a href="https://census.gov/">
+              <img alt="Logo" src="census.png">
+            </a>
+          </div>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="http://www.crimsonhexagon.com/about">
+              <img alt="Help" src="info-help-161-white.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  <div class="page-header; text-center" style= "max-width: 700px ; margin: auto" >
+    <h1 style="color:#199fb0">
+      Crimson Hexagon Web Data Connector </br>
+      <h4 style ="color:#586c85">
+        About this WDC
+      </h4>
+    </h1>
+    <p align="justify" style="width:600px ; margin: auto ">
+     The purpose of this web data connector is to bring data from selected items from Crimson Hexagon.
+	 <br>
+	 Currently, three monitors are available for your selection: A CEM monitor, a Facebook monitor and a Twitter monitor.
+	<br>
+	<br>
+	<b>CEM Monitor:</b> Displays content sources. Facebook, Twitter, Blogs.....
+	<br>
+	<b>Facebook Monitor:</b> Displays content sources. Facebook, Twitter, Blogs.....
+	<br>
+	<b>Twitter Monitor:</b> Displays content sources. Facebook, Twitter, Blogs.....
+	</br>
+</p>
+	<div class="row vertical-center-row">
+		<div class="text-center">
+		 <button type = "button" id = "submitButton" class = "btn btn-success" style = "border: 2px #ff8c68; background-color:#ff8c68; width:200px">Get Monitor Data!</button>
+		 <br><br>
+		 <button type = "button" id = "submitButton2" class = "btn btn-success" style = "border: 2px #ff8c68; background-color:#ff8c68; width:200px">Get Facebook Data!</button>
+		 <br><br>
+		 <button type = "button" id = "submitButton2" class = "btn btn-success" style = "border: 2px #ff8c68; background-color:#ff8c68; width:200px">Get Twitter Data!</button>
+		 <br>
+	</div>
+</div>
+</body>
+</html>
